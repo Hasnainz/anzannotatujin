@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>暗算の達人</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    
+    <div class="full-bar">
+        <h1 id="question">---</h1>  
+    </div>
+
+    <div class="full-bar">
+      <input id="answer" class="input" type="text"></input>
+    </div>
+
+    <div class="inline-bar">
+      <h1 class="a">Score:</h1><h1 class="a" id="score">0</h1>
+    </div>
+    <div class="inline-bar">
+      <h1 class="a">Incorrect:</h1><h1 class="a" id="incorrect">0</h1>
+    </div>
+
+
+
+    <div class="full-bar">
+        <li><a class="arrow" onclick='return go_main_page()'>
+            <i class="fas fa-arrow-alt-right"></i>
+            Back
+        </a></li>
+    </div>
+
+
+
+
+	<script src="game.js"></script>
+  </body>
+</html>
