@@ -94,6 +94,7 @@ function load_question_2() {
     let a = get_random(1000, 9999);
     let b = get_random(101, 999);
     question.innerHTML = a + " - " + b;
+    answer = a - b;
  
 
 }
