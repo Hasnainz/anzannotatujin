@@ -50,7 +50,7 @@ function load_question() {
 }
 
 function go_main_page() {
-    window.location.href="../"
+    window.location.href="/"
 }
 
 
