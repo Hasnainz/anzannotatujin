@@ -4,49 +4,10 @@ let score = document.getElementById('score');
 let incorrect= document.getElementById('incorrect');
 answer_box.addEventListener('keypress', input_listener);
 let selected_chapter = parseInt(sessionStorage.getItem("chapter"));
-
 load_question();
 
 function load_question() {    
-    switch(selected_chapter){
-        case 1:
-            load_question_1();
-            break;
-        case 2:
-            load_question_2();
-            break;
-        case 3:
-            load_question_3();
-            break;
-        case 4:
-            load_question_4();
-            break;
-        case 5:
-            load_question_5();
-            break;
-        case 6:
-            load_question_6();
-            break;
-        case 7:
-            load_question_7();
-            break;
-        case 8:
-            load_question_8();
-            break;
-        case 9:
-            load_question_9();
-            break;
-        case 10:
-            load_question_10();
-            break;
-        case 11:
-            load_question_11();
-            break;
-        case 12:
-            load_question_12();
-            break;
-    }
-
+    eval(`load_question_${selected_chapter}()`);
 }
 
 function go_main_page() {
@@ -135,9 +96,11 @@ function load_question_7() {
 //free real estate
 
 function load_question_8() {
-    let a = get_random(101, 999);
-    question.innerHTML = a + "²";
-    answer = a * a;
+    let a = get_random(101, 9999);
+    let b = get_random(2, 9);
+    question.innerHTML = a + "/" + b;
+    answer = a / b;
+    console.log(answer);
 
 }
 
