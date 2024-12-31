@@ -3,8 +3,6 @@ function move_page() {
 }
 
 function select_chapter(n) {
-    console.log(n);
-    console.log("aaa");
     sessionStorage.setItem("chapter", n);
     move_page();
 }

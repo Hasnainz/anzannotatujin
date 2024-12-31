@@ -8,7 +8,7 @@ let selected_chapter = parseInt(sessionStorage.getItem("chapter"));
 let digit_slider = document.getElementById('digits');
 let size_slider = document.getElementById('size');
 
-let size = 1;
+let size = 5;
 let digits = 1;
 
 digit_slider.oninput = function() {
@@ -28,7 +28,7 @@ function load_question() {
 }
 
 function go_main_page() {
-    window.location.href="/anzannotatujin"
+    window.location.href="index.html";
 }
 
 

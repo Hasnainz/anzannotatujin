@@ -7,18 +7,19 @@
   display: none;
 }
 
-html, body {
-  display:flex;
+html,
+body {
+  display: flex;
   margin-top: 10%;
   margin-bottom: 10%;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
-  font-family: 'Press Start 2P';
-  color: #EDF6B5;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P";
+  color: #edf6b5;
   font-size: 1rem;
   line-height: 2;
-  height: 100%;
+  height: 70%;
   background-color: #221;
   text-transform: uppercase;
 }
@@ -29,7 +30,7 @@ a {
 }
 
 li {
-  color: #4FAF44;
+  color: #4faf44;
   list-style-type: none;
   text-align: center;
   /* background-color: aliceblue; */
@@ -41,7 +42,6 @@ li {
   width: 100%;
   text-align: center;
   /* background-color: pink; */
-  
 }
 .slider-class {
   width: 50%;
@@ -54,8 +54,37 @@ li {
   width: 100%;
   text-align: center;
   outline: none;
-  /* background: #221; */
-  
+  background: #221;
+}
+
+/* For Chrome, Safari, Opera, and Edge  */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #edf6b5;
+  height: 0.5rem;
+  border-radius: 7px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+   border: 4px solid #edf6b5;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background: #221;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-track {
+  background: #edf6b5;
+  height: 0.5rem;
+  border-radius: 7px;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: 4px solid #edf6b5;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background: #221;
 }
 
 .arrow i {
@@ -63,38 +92,37 @@ li {
 }
 
 .arrow {
-  position:relative;
-	display: block;
-  color: #F6EB14;
+  position: relative;
+  display: block;
+  color: #f6eb14;
 }
 
 .arrow:hover {
   cursor: pointer;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.arrow:hover i { 
+.arrow:hover i {
   display: block;
   position: absolute;
-  top: 0.50em; 
+  top: 0.5em;
   left: -6em;
 }
 
 .input {
   background-color: #221;
-  width:50%;
-  color: #EDF6B5;
-  font-family: 'Press Start 2P';
+  width: 50%;
+  color: #edf6b5;
+  font-family: "Press Start 2P";
   font-size: 40px;
   text-align: center;
   outline: none;
   outline-width: 3px;
-  outline-color: #EDF6B5;
-
+  outline-color: #edf6b5;
 }
 .inline-bar {
   display: inline;
 }
 .a {
-    display: inline;    
+  display: inline;
 }
