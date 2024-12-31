@@ -43,6 +43,20 @@ li {
   /* background-color: pink; */
   
 }
+.slider-class {
+  width: 50%;
+  text-align: center;
+}
+
+.slider {
+  /* appearance: none; */
+  border-radius: 1px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  /* background: #221; */
+  
+}
 
 .arrow i {
   display: none;
